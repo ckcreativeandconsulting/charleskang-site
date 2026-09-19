@@ -3,7 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charles Kang | AI Product Leadership</title>
+  <title>Charles Kang | AI Product Leader & Builder</title>
+  <meta name="description" content="Charles Kang is an AI Product Leader & Builder helping turn AI opportunities into working products and workflows, especially in regulated environments and financial services." />
+  <meta property="og:title" content="Charles Kang | AI Product Leader & Builder" />
+  <meta property="og:description" content="Product leadership, hands-on AI building, and regulated-enterprise experience for project, contract, fractional, and select full-time opportunities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="charleskang.com thumbnail.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Charles Kang",
+    "jobTitle": "AI Product Leader & Builder",
+    "url": "https://charleskang.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/ck-charleskang",
+      "https://github.com/ckcreativeandconsulting"
+    ],
+    "knowsAbout": [
+      "AI product leadership",
+      "Product management",
+      "Enterprise AI",
+      "Financial services",
+      "Fractional product leadership"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -310,6 +336,19 @@
       line-height: 1.75;
     }
 
+    .service-situation {
+      color: rgba(255,255,255,0.78);
+      margin-bottom: 0.85rem;
+    }
+
+    .service-engagement {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.48);
+    }
+
     /* ── WHY ME ── */
     #why {
       background: var(--paper-warm);
@@ -479,7 +518,7 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
     }
 
@@ -718,6 +757,11 @@
       .nav-links { gap: 1.5rem; }
       section { padding: 4rem 1.5rem; }
     }
+
+    @media (max-width: 640px) {
+      nav { justify-content: center; }
+      .nav-links { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -729,7 +773,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#work">Work</a></li>
-      <li><a href="#writing">Writing</a></li>
+      <template id="writing-nav-archive"><li><a href="#writing">Writing</a></li></template>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -738,19 +782,19 @@
   <section id="hero">
     <div class="hero-text">
       <div class="hero-eyebrow">AI Product Leader & Builder</div>
-      <h1>I help Fintech &amp; SaaS companies turn <em>AI ambition</em> into working products</h1>
-      <p class="hero-sub">I'm Charles — a product leader and AI builder with deep roots in financial services and tech. I've deployed AI at enterprise scale and built hands-on AI systems from scratch. I work with companies as a fractional product lead, strategic advisor, or hands-on project partner — depending on what you actually need.</p>
-      <p style="font-size:0.88rem; color:var(--ink-muted); margin-top:-1rem; margin-bottom:2rem; font-style:italic;">Open to fractional, consulting, and select full-time opportunities.</p>
+      <h1>I turn AI opportunities into working products and workflows</h1>
+      <p class="hero-sub">I'm Charles, a product leader and hands-on AI builder with deep experience in financial services and enterprise technology. I work from discovery and prototyping through product strategy, evaluation, governance, and delivery, especially in complex, regulated environments.</p>
+      <p style="font-size:0.88rem; color:var(--ink-muted); margin-top:-1rem; margin-bottom:2rem; font-style:italic;">Available for consulting, contract, fractional, and select full-time opportunities.</p>
       <div class="btn-group">
-        <a href="#work" class="btn btn-primary">See My Work</a>
-        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <a href="#contact" class="btn btn-primary">Discuss a Product Challenge</a>
+        <a href="#work" class="btn btn-outline">See My Work</a>
       </div>
     </div>
     <div class="hero-image">
       <img src="headshot.jpg" alt="Charles — AI Product Leader" />
       <div class="hero-badge">
-        <strong>7,000+</strong>
-        advisors impacted at JPMorgan
+        <strong>9,000+</strong>
+        users in the broader JPMorgan Wealth Management advisor platform
       </div>
     </div>
   </section>
@@ -760,22 +804,28 @@
     <div class="container">
       <div class="section-label">What I Do</div>
       <h2>Three ways I can help</h2>
-      <p class="section-intro">I adapt to what you need — from embedded product leadership to rapid prototyping to strategic clarity. No retainer packages, no bloated teams.</p>
+      <p class="section-intro">I help teams move from a real business problem to a product, workflow, prototype, evaluation approach, and delivery plan that people can actually use.</p>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-num">01</div>
-          <h3>Fractional Product Leadership</h3>
-          <p>Need senior product leadership without a full-time hire? I embed with your team as a Principal PM or Product Lead — setting AI product strategy, aligning cross-functional teams, and driving execution from the inside. Ideal for companies serious about AI but not ready to hire a full-time senior product leader.</p>
+          <h3>AI Product Discovery &amp; Prototype</h3>
+          <p class="service-situation">You see an AI opportunity but aren't sure exactly what to build.</p>
+          <p>I help identify the workflow, understand the users and business problem, define the AI use case, prototype the experience, establish evaluation criteria, and turn the concept into an executable product plan.</p>
+          <p class="service-engagement">Typical engagement: focused project or sprint, approximately 2-6 weeks depending on scope.</p>
         </div>
         <div class="service-card">
           <div class="service-num">02</div>
-          <h3>AI Strategy &amp; Advisory</h3>
-          <p>Not sure where AI creates real leverage in your business? I help you cut through the noise — identifying the highest-value use cases, mapping the risks, and building a roadmap you can actually execute. Grounded in real enterprise deployment experience at JPMorgan scale, not theory.</p>
+          <h3>Embedded AI Product Leadership</h3>
+          <p class="service-situation">You have an AI initiative and need an experienced product leader to drive it.</p>
+          <p>I embed with product, engineering, design, data, business, and control partners to take an AI product from ambiguity through validation, delivery, and adoption.</p>
+          <p class="service-engagement">Typical engagement: short- or medium-term contract, approximately 3-6+ months depending on need.</p>
         </div>
         <div class="service-card">
           <div class="service-num">03</div>
-          <h3>Hands-On Build &amp; Prototyping</h3>
-          <p>Sometimes the fastest way to validate an idea is to build it. I design and prototype AI-powered tools, agents, and workflows — so you can see what works before you over-invest. From internal productivity tools to customer-facing AI features.</p>
+          <h3>Fractional Product Leadership</h3>
+          <p class="service-situation">You need senior product leadership without adding another full-time executive.</p>
+          <p>I provide ongoing product leadership across strategy, prioritization, roadmap development, stakeholder alignment, team operating practices, and execution.</p>
+          <p class="service-engagement">Typical engagement: part-time or fractional ongoing leadership.</p>
         </div>
       </div>
     </div>
@@ -788,28 +838,29 @@
       <h2>Enterprise depth.<br/>Builder instinct.</h2>
       <div class="why-grid">
         <div class="why-text">
-          <p>Most AI consultants will tell you what to build. Few have actually built it inside a regulated enterprise with thousands of users, a compliance team, and real stakes.</p>
-          <p>At <strong>JPMorgan Wealth Management</strong>, I led the firm's first AI deployment — an internal platform that accelerated advisor research workflows by 50% and established the governance framework for all future AI at the firm. I did it by partnering across data science, engineering, risk, and compliance — and by keeping the focus on outcomes, not technology for its own sake.</p>
-          <p>Since then I've continued building — AI agents, orchestration pipelines, mobile apps with voice AI, automated trading systems — because I believe the best product leaders don't just direct, <strong>they make things.</strong></p>
-          <p>That combination — enterprise credibility plus hands-on builder instinct — is what I bring to every engagement.</p>
-          <blockquote class="why-pull">"The best product leaders don't just direct — they make things. I've done both, at scale and from scratch."</blockquote>
+          <p>AI in a regulated enterprise looks very different from AI in a demo. I've worked through that reality firsthand across users, engineering, data science, risk, compliance, governance, adoption, and the constraints that come with each.</p>
+          <p>At <strong>JPMorgan Wealth Management</strong>, I owned the Wealth pilot of an internal advisor research chatbot on a platform serving 9,000+ users, including approximately 5,000 financial advisors. My role covered field feedback, adoption, and lightweight governance ahead of broader rollout.</p>
+          <p>That experience shapes how I approach AI product leadership in environments where privacy, controls, human review, governance, auditability, stakeholder complexity, and user adoption all matter.</p>
+          <p>Since then I've continued building: agentic workflows, orchestration prototypes, mobile products with voice AI, and structured evaluation approaches. The best product leaders don't just direct; <strong>they make things concrete.</strong></p>
+          <p>That combination of regulated-enterprise experience and hands-on product building is what I bring to every engagement.</p>
+          <blockquote class="why-pull">"The useful path from AI idea to adopted product runs through users, workflows, engineering, controls, evidence, and trust."</blockquote>
         </div>
         <div class="why-stats">
           <div class="stat-card">
-            <div class="stat-num">7,000+</div>
-            <div class="stat-label">Financial advisors impacted by AI deployment at JPMorgan</div>
+            <div class="stat-num">9,000+</div>
+            <div class="stat-label">Users in the broader JPMorgan Wealth Management advisor platform</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">50%</div>
-            <div class="stat-label">Acceleration in advisor research workflows</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5+</div>
-            <div class="stat-label">AI projects independently designed and shipped</div>
+            <div class="stat-num">5,000+</div>
+            <div class="stat-label">Financial advisors within the broader platform user base</div>
           </div>
           <div class="stat-card">
             <div class="stat-num">12+</div>
-            <div class="stat-label">Years in product management across Fintech and SaaS</div>
+            <div class="stat-label">Years in product leadership</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">Deep</div>
+            <div class="stat-label">Financial-services experience</div>
           </div>
         </div>
       </div>
@@ -820,18 +871,18 @@
   <section id="work">
     <div class="container">
       <div class="section-label">Work</div>
-      <h2>What I've built &amp; shipped</h2>
-      <p class="section-intro">Across enterprise deployments, AI agents, mobile apps, and automated workflows — here's a sample of how I think and what I make.</p>
+      <h2>Selected product work</h2>
+      <p class="section-intro">A focused sample of product leadership and hands-on AI building, curated around the work most relevant to complex environments.</p>
 
       <div class="work-subsection">
         <div class="work-subsection-label">Enterprise</div>
         <div class="featured-case">
           <div>
             <div class="case-label">JPMorgan Wealth Management · Director of Product Management</div>
-            <h3>AI-Driven Advisor Support Platform</h3>
-            <p>Led the firm's first AI deployment — an internal chatbot giving 7,000+ financial advisors instant access to market research, portfolio analytics, and client-approved content through a single natural language interface. Previously, advisors manually searched across multiple fragmented intranet portals.</p>
+            <h3>Internal Advisor Research Chatbot Pilot</h3>
+            <p>Owned the Wealth pilot of an internal advisor research chatbot designed to help advisors access market research, including internal use and client-approved content, through a natural-language experience. The pilot ran within the broader JPMorgan Wealth Management advisor platform, which served 9,000+ users, including approximately 5,000 financial advisors. My role covered product ownership, field feedback, adoption, lightweight governance, cross-functional partnership, and preparation for broader rollout.</p>
             <div class="hard-part">
-              <p><strong>What made it hard:</strong> Deploying AI inside one of the world's largest financial institutions meant navigating compliance, risk, data science, and engineering simultaneously — while keeping the advisor experience simple enough to actually drive adoption. I also established the governance framework that would guide all future AI at the firm.</p>
+              <p><strong>What made it hard:</strong> Piloting AI inside a regulated financial institution required coordination across product, data science, engineering, risk, compliance, business, and operations while balancing usefulness, controls, user feedback, and adoption. My role included field feedback, adoption, and lightweight governance as the Wealth organization prepared for broader rollout.</p>
             </div>
             <div class="tags">
               <span class="tag">RAG</span>
@@ -843,82 +894,48 @@
           </div>
           <div class="case-metrics">
             <div class="metric">
-              <div class="metric-num">50%</div>
-              <div class="metric-label">Faster advisor research workflows</div>
+              <div class="metric-num">9K+</div>
+              <div class="metric-label">Platform users in the broader advisor ecosystem</div>
             </div>
             <div class="metric">
-              <div class="metric-num">7K+</div>
-              <div class="metric-label">Advisors with AI-powered insights</div>
+              <div class="metric-num">5K+</div>
+              <div class="metric-label">Financial advisors within the platform user base</div>
             </div>
             <div class="metric">
-              <div class="metric-num">#1</div>
-              <div class="metric-label">First AI use case at the firm</div>
+              <div class="metric-num">Pilot</div>
+              <div class="metric-label">Internal advisor research chatbot</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="work-subsection">
-        <div class="work-subsection-label">Independent Projects</div>
-        <p style="font-size:0.95rem; color:var(--ink-soft); margin-bottom:2rem; max-width:620px;">Outside of client work, I build continuously — using real problems as the forcing function. These projects demonstrate how I think about AI orchestration, product design, and getting from idea to working system.</p>
+        <div class="work-subsection-label">Hands-On Product Building</div>
+        <p style="font-size:0.95rem; color:var(--ink-soft); margin-bottom:2rem; max-width:620px;">Outside of enterprise work, I build continuously using real problems as the forcing function. These examples show how I translate ambiguous workflows into prototypes, evaluation patterns, and usable products.</p>
         <div class="projects-grid">
 
           <div class="project-card">
-            <h3>Job Agent</h3>
-            <p>An agentic system that automates job search research, application tracking, and outreach — using LLM orchestration to surface relevant opportunities and draft personalized communications.</p>
-            <p class="client-value">Shows how agentic AI can eliminate repetitive knowledge work at the individual or team level.</p>
+            <h3>Post-Meeting Operations Intelligence</h3>
+            <p>An active agentic AI prototype for turning unstructured meeting information into CRM-ready notes, tasks, follow-up artifacts, next-best actions, and human-reviewed downstream work.</p>
+            <p class="client-value">Demonstrates how I approach ambiguous AI workflows: typed domain objects, golden evaluation cases, synthetic policy scenarios, human review, deterministic validation, and workflow orchestration.</p>
             <div class="tags">
               <span class="tag">AI Agents</span>
-              <span class="tag">LLM Orchestration</span>
-              <span class="tag">Python</span>
+              <span class="tag">Evaluation</span>
+              <span class="tag">Human Review</span>
+              <span class="tag">Workflow Design</span>
             </div>
           </div>
 
           <div class="project-card">
-            <h3>AI Ops</h3>
-            <p>A personal AI operations layer that manages how models, agents, and workflows talk to each other. Built to explore the real challenges of orchestrating multiple AI systems reliably.</p>
-            <p class="client-value">Reflects how I think about AI architecture — not just individual tools, but how they work together.</p>
-            <div class="tags">
-              <span class="tag">Orchestration</span>
-              <span class="tag">MLOps</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h3>MyLinkInbox</h3>
-            <p>A personal reading intelligence system — summarizes articles from Substack, X, news sites, and long-form content before I decide whether to read them, then builds a fully searchable knowledge base of everything I've saved. Uses Discord as a frictionless input pipe and supports local AI via Ollama or cloud APIs, so the entire system can run free with full data privacy.</p>
-            <p class="client-value">A replicable pattern for any organization that needs to triage, summarize, and search high volumes of unstructured content — from customer feedback to internal communications to competitive intelligence.</p>
-            <div class="tags">
-              <span class="tag">LLMs</span>
-              <span class="tag">Local AI / Ollama</span>
-              <span class="tag">Semantic Search</span>
-              <span class="tag">Python</span>
-              <span class="tag">ChromaDB</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h3>Local Journal</h3>
-            <p>A cross-platform mobile journaling app built in Flutter, integrating OpenAI's Whisper for voice-to-text — taken from concept through App Store submission.</p>
-            <p class="client-value">Demonstrates full product lifecycle thinking — UX, AI integration, mobile development, and distribution.</p>
+            <h3>Local Journal&reg; — Privacy-First Mobile Product</h3>
+            <p>Designed, built, and shipped a privacy-first journaling app using Flutter and Dart, with on-device Whisper voice transcription, local data storage, biometric privacy controls, premium features, and in-app purchasing.</p>
+            <p class="client-value">Demonstrates end-to-end product building: from product concept and UX decisions through implementation, privacy architecture, monetization, testing, and App Store release.</p>
             <div class="tags">
               <span class="tag">Flutter</span>
+              <span class="tag">On-Device AI</span>
               <span class="tag">Whisper</span>
-              <span class="tag">App Store</span>
-              <span class="tag">Mobile</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h3>Trading Bot</h3>
-            <p>An automated trading system that processes real-time market signals and executes decisions based on configurable logic — with strong emphasis on failure modes and risk management.</p>
-            <p class="client-value">Demonstrates quantitative thinking and the discipline to build AI tools where mistakes have real consequences.</p>
-            <div class="tags">
-              <span class="tag">Fintech</span>
-              <span class="tag">Algo Trading</span>
-              <span class="tag">Python</span>
-              <span class="tag">Real-Time Data</span>
+              <span class="tag">Privacy</span>
+              <span class="tag">Consumer Product</span>
             </div>
           </div>
 
@@ -927,38 +944,40 @@
     </div>
   </section>
 
-  <!-- WRITING -->
-  <section id="writing">
-    <div class="container">
-      <div class="section-label">Writing</div>
-      <h2>Substance over hype</h2>
-      <p class="section-intro">I write about AI product strategy, building with LLMs, and lessons from deploying AI in the real world — for product leaders and operators who want to cut through the noise.</p>
-      <div class="writing-grid">
-        <div class="article-card">
-          <div class="article-num">01</div>
-          <h3>What JPMorgan Taught Me About Deploying AI at Scale</h3>
-          <p>The governance, compliance, and adoption lessons that most AI articles skip over.</p>
-        </div>
-        <div class="article-card">
-          <div class="article-num">02</div>
-          <h3>I Built an AI Agent to Automate My Job Search — Here's What I Learned</h3>
-          <p>What happens when you use agentic AI to solve a deeply human problem.</p>
-        </div>
-        <div class="article-card">
-          <div class="article-num">03</div>
-          <h3>Why Your AI Strategy Should Start With One Boring Use Case</h3>
-          <p>A contrarian take on why narrow beats broad when it comes to AI adoption inside large organizations.</p>
+  <!-- WRITING (archived for easy restoration) -->
+  <template id="writing-section-archive">
+    <section id="writing">
+      <div class="container">
+        <div class="section-label">Writing</div>
+        <h2>Substance over hype</h2>
+        <p class="section-intro">I write about AI product strategy, building with LLMs, and lessons from piloting AI in the real world — for product leaders and operators who want to cut through the noise.</p>
+        <div class="writing-grid">
+          <div class="article-card">
+            <div class="article-num">01</div>
+            <h3>What JPMorgan Taught Me About Piloting AI in a Regulated Enterprise</h3>
+            <p>The governance, compliance, and adoption lessons that most AI articles skip over.</p>
+          </div>
+          <div class="article-card">
+            <div class="article-num">02</div>
+            <h3>I Built an AI Agent to Automate My Job Search — Here's What I Learned</h3>
+            <p>What happens when you use agentic AI to solve a deeply human problem.</p>
+          </div>
+          <div class="article-card">
+            <div class="article-num">03</div>
+            <h3>Why Your AI Strategy Should Start With One Boring Use Case</h3>
+            <p>A contrarian take on why narrow beats broad when it comes to AI adoption inside large organizations.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </template>
 
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <div class="section-label">Contact</div>
       <h2>Let's have a conversation</h2>
-      <p class="section-intro">Whether you're exploring fractional product leadership, need an AI strategy partner, or want to talk through a specific challenge — I'm happy to connect. No pitch decks, no hard sells.</p>
+      <p class="section-intro">Whether you're hiring for full-time product leadership, staffing a contract AI/product role, exploring fractional support, or testing a specific AI product idea, I'm happy to talk through the challenge.</p>
       <div class="contact-grid">
         <form class="contact-form" action="https://formspree.io/f/xzdwwowj" method="POST">
           <div class="form-group">
@@ -997,7 +1016,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 <span>Charles Kang</span> · Founder, CK Creative and Consulting LLC · All rights reserved</p>
+    <p>© 2026 <span>Charles Kang</span> · Founder, CK Creative and Consulting LLC · All rights reserved</p>
   </footer>
 
 </body>
